@@ -1,7 +1,7 @@
 <footer class="footer-wrapper footer-layout2">
   <div class="shape-before"><img src="assets/img/shape/footer-before.png" alt="shape"></div>
-  <div class="shape-mockup movingX d-none d-hd-block" data-bottom="37%" data-left="6%"><img
-          src="assets/img/icon/cloud-2.png" alt="shapes"></div>
+  {{-- <div class="shape-mockup movingX d-none d-hd-block" data-bottom="37%" data-left="6%"><img
+          src="assets/img/icon/cloud-2.png" alt="shapes"></div> --}}
   <div class="widget-area">
       <div class="container">
           <div class="row justify-content-between">
@@ -59,8 +59,7 @@
   <div class="footer-copyright">
       <div class="container">
 
-          <p class="copyright">&copy; Copyright 2024 STIKes Sambas. Dikelola oleh <a
-                  href="#">UPT PUSKOM STIKES SAMBAS</a>.</p>
+          <p class="copyright">&copy; Copyright 2025 <a href="https://stikessambas.ac.id/">STIKes Sambas</a></p>
       </div>
   </div>
 </footer>

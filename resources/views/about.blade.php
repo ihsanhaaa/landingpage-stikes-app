@@ -11,7 +11,7 @@
     @include('components.navbar')
 
     <!--======== About Section ========-->
-    <div class="breadcumb-wrapper" data-bg-src="{{ asset('img/foto-wisuda.JPG') }}">
+    <div class="breadcumb-wrapper" data-bg-src="{{ asset('img/foto-wisuda.jpg') }}">
         <div class="container">
             <div class="breadcumb-content">
                 <h1 class="breadcumb-title">Tentang Kami</h1>
@@ -30,7 +30,12 @@
             <div class="row gx-50 gy-30">
                 <div class="col-lg-12 wow fadeInLeft" data-wow-delay="0.1s">
                     <div class="contact-form-box">
-                        <h2 class="contact-title">Tentang STIKES SAMBAS</h2>
+                        <video controls width="100%" class="rounded">
+                            <source src="{{ asset('videos/video-profil-stikes.mp4') }}" type="video/mp4">
+                            Browser Anda tidak mendukung tag video.
+                        </video>
+
+                        <h2 class="contact-title mt-3">Tentang STIKES SAMBAS</h2>
                         
                         <p>
                             Sekolah Tinggi Ilmu Kesehatan (STIKES) Sambas adalah institusi pendidikan tinggi yang berfokus pada bidang kesehatan, berlokasi di Sambas, Kalimantan Barat. Didirikan pada tahun 2018 berdasarkan SK KEMENRISTEKDIKTI Nomor 1211/KPT/I/2018, STIKES Sambas berkomitmen untuk menyediakan pendidikan berkualitas tinggi bagi calon tenaga kesehatan di Indonesia. 

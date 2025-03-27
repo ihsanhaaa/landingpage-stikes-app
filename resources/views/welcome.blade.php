@@ -6,6 +6,38 @@
 
 @section('content')
     @push('css-plugins')
+    <style>
+        .whatsapp-button {
+            position: fixed;
+            bottom: 10px;
+            right: 30px;
+            background-color: #25D366;
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+            text-decoration: none;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .whatsapp-button:hover {
+            transform: scale(1.1);
+            box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.4);
+        }
+
+        <style>
+            .insta-container {
+                display: flex;
+                justify-content: center;
+            }
+        </style>
+    </style>
+    
     @endpush
 
     @include('components.navbar')
@@ -19,11 +51,6 @@
             <!-- Single Slide -->
             <div class="vs-hero-inner">
                 <div class="vs-hero-bg" data-bg-src="{{ asset('img/Brosur-PMB.jpg') }}"></div>
-
-            </div>
-            <!-- Single Slide -->
-            <div class="vs-hero-inner">
-                <div class="vs-hero-bg" data-bg-src="{{ asset('img/banner-pmb.jpg') }}"></div>
 
             </div>
             <!-- Single Slide -->
@@ -137,14 +164,49 @@
                 </div>
             </div>
         </div>
-        <div class="shape-mockup shapePulse d-none d-lg-block rotate" data-bottom="22%" data-right="5%"><img
+        {{-- <div class="shape-mockup shapePulse d-none d-lg-block rotate" data-bottom="22%" data-right="5%"><img
                 src="assets/img/icon/star.png" alt="shapes"></div>
         <div class="shape-mockup shapePulse d-none d-hd-block" data-top="17%" data-left="6%"><img
                 src="assets/img/icon/cap-plane.png" alt="shapes"></div>
         <div class="shape-mockup rotate d-none d-sm-block z-index-2" data-bottom="-7%" data-left="6%"><img
-                src="assets/img/icon/busket-ball.png" alt="shapes"></div>
+                src="assets/img/icon/busket-ball.png" alt="shapes"></div> --}}
     </section>
     <!--======== / About Section ========-->
+
+    <!--======== Team Section ========-->
+    <section class="team-section space-extra">
+        {{-- <div class="shape-before"><img src="assets/img/shape/before-shape-8.png" alt="shape"></div> --}}
+        <div class="container">
+            <div class="row" data-slide-show="3" data-arrows="true">
+                <!-- Single Team -->
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="team-box">
+                        <div class="team-img">
+                            <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DHFURJjS4_q/" data-instgrm-version="14"></blockquote>
+                        </div>
+                    </div>
+                </div>
+                <!-- Single Team -->
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="team-box">
+                        <div class="team-img">
+                            <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DHU1c2-S9EH/" data-instgrm-version="14"></blockquote>
+                        </div>
+                    </div>
+                </div>
+                <!-- Single Team -->
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="team-box">
+                        <div class="team-img">
+                            <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DGIaRsCyPUM/" data-instgrm-version="14"></blockquote>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script async src="//www.instagram.com/embed.js"></script>
+    </section>
+    <!--======== / Team Section ========-->
 
 
     <!--======== Counter Section ========-->
@@ -158,11 +220,13 @@
                     <div class="counter-box">
                         <div class="counter-info">
                             <p class="counter-text" style="font-size: 20px;">Pembukaan Pendaftaran Mahasiswa Baru Tahun
-                                Akademik 2025/2026 Program Studi S-1 FARMASI</p>
+                                Akademik 2025/2026 Program Studi S-1 FARMASI Gelombang 2</p>
 
                             <h1 class="sec-title big-title" style="color: white; margin-top: 10px;">Mari Bergabung Bersama Kami</h1>
 
                             <a href="https://stikessambas.sevimaplatform.com/spmbfront/home" target="_blank" class="vs-btn wave-btn">Daftar Sekarang</a>
+                            <a href="{{ asset('img/Brosur-PMB.jpg') }}" download="Brosur-PMB.jpg" class="vs-btn wave-btn"><i class="fas fa-arrow-circle-down"></i> Download Brosur</a>
+
                         </div>
                     </div>
                 </div>
@@ -318,8 +382,12 @@
     </section>
     <!--======== / Team Section ========-->
 
+    <a href="https://wa.me/6289602461010?text=Halo,%20saya%20berminat%20untuk%20mendaftar%20di%20STIKes%20Sambas" class="whatsapp-button" target="_blank" title="Kontak">
+        &#x1F4AC;
+    </a>
+
     <!-- Scroll To Top -->
-    <a href="#" class="scrollToTop scroll-btn"><i class="far fa-arrow-up"></i></a>
+    {{-- <a href="#" class="scrollToTop scroll-btn"><i class="far fa-arrow-up"></i></a> --}}
 
     @include('components.footer')
 

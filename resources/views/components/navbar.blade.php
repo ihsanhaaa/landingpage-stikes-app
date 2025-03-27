@@ -10,6 +10,16 @@
                 <li>
                     <a href="{{ url('/') }}">Beranda</a>
                 </li>
+
+                <li class="menu-item-has-children">
+                    <a href="#">Profil</a>
+                    <ul class="sub-menu">
+                        <li><a href="{{ route('about') }}">Tentang</a></li>
+                        <li><a href="#">Visi & Misi</a></li>
+                        <li><a href="#">Struktur Organisasi</a></li>
+                    </ul>
+                </li>
+
                 <li class="menu-item-has-children">
                     <a href="#">Aplikasi</a>
                     <ul class="sub-menu">
@@ -20,13 +30,49 @@
                     </ul>
                 </li>
                 <li>
-                    <a href="#berita">Berita</a>
+                    <a href="{{ url('/#galeri') }}">Galeri</a>
                 </li>
-                <li>
-                    <a href="#galeri">Galeri</a>
-                </li>
-                <li>
-                    <a href="{{ route('about') }}">Tentang</a>
+
+                <li class="menu-item-has-children">
+                    <a href="#">Unduhan</a>
+                    <ul class="sub-menu">
+                        <li><a href="{{ route('pedomanAkademik') }}">Pedoman Akademik</a></li>
+                        <li>
+                            <a href="#">Kelulusan</a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="{{ route('pedomanSkripsi') }}">Pedoman Penulisan Skripsi</a>
+                                </li>
+                                <li>
+                                    <a href="{{ route('alurSkripsi') }}">Alur Skripsi</a>
+                                </li>
+                                <li>
+                                    <a href="{{ route('pengajuanSempro') }}">Form Pengajuan SEMPRO</a>
+                                </li>
+                                <li>
+                                    <a href="{{ route('pengajuanSemhas') }}">Form Pengajuan SEMHAS</a>
+                                </li>
+                                <li>
+                                    <a href="#">Syarat Yudisium</a>
+                                </li>
+                                <li>
+                                    <a href="#">Syarat Wisuda</a>
+                                </li>
+                            </ul>
+                        </li>
+                        
+                        <li>
+                            <a href="#">Administrasi</a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="#">Alur KHS - KRS Mahasiswa</a>
+                                </li>
+                                <li>
+                                    <a href="#">Mahasiswa Pindah/Cuti</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
                 </li>
             </ul>
         </div><!-- Menu Will Append With Javascript -->
@@ -42,8 +88,8 @@
             <div class="row align-items-center justify-content-between">
                 <div class="col-auto">
                     <div class="header-notice">
-                        <span class="date"><span class="day">20</span><span class="month">Feb
-                                2025</span></span><span class="notice">Pendaftaran Mahasiswa Baru Gelombang 1</span>
+                        <span class="date"><span class="day">31</span><span class="month">Mei
+                                2025</span></span><span class="notice">Pendaftaran Mahasiswa Baru Gelombang 2</span>
                                 <a href="https://stikessambas.sevimaplatform.com/spmbfront/home" target="_blank" style="color: white; margin-left: 20px;"><u>Daftar Sekarang</u></a>
                     </div>
                 </div>
@@ -78,6 +124,16 @@
                                     <li>
                                         <a href="{{ url('/') }}">Beranda</a>
                                     </li>
+
+                                    <li class="menu-item-has-children">
+                                        <a href="#">Profil</a>
+                                        <ul class="sub-menu">
+                                            <li><a href="{{ route('about') }}">Tentang</a></li>
+                                            <li><a href="#">Visi & Misi</a></li>
+                                            <li><a href="#">Struktur Organisasi</a></li>
+                                        </ul>
+                                    </li>
+                                    
                                     <li class="menu-item-has-children">
                                         <a href="#">Aplikasi</a>
                                         <ul class="sub-menu">
@@ -85,17 +141,39 @@
                                             <li><a href="https://elearning.kampusstikessambas.ac.id/" target="_blank">E-Learning</a></li>
                                             <li><a href="https://sistemas.kampusstikessambas.ac.id/" target="_blank">SISTEMAS</a></li>
                                             <li><a href="https://lab.kampusstikessambas.ac.id/home" target="_blank">LAB</a></li>
-                                            <li><a href="#">E-Library</a></li>
+                                            <li><a href="https://elibrary.kampusstikessambas.ac.id/" target="_blank">Perpustakaan</a></li>
+                                            <li><a href="https://ejournal.kampusstikessambas.ac.id/" target="_blank">Jurnal</a></li>
                                         </ul>
                                     </li>
                                     <li>
-                                        <a href="#berita">Berita</a>
+                                        <a href="{{ url('/#galeri') }}">Galeri</a>
                                     </li>
-                                    <li>
-                                        <a href="#galeri">Galeri</a>
+
+                                    <li class="menu-item-has-children">
+                                        <a href="#">Lulusan</a>
+                                        <ul class="sub-menu">
+                                            <li><a href="{{ route('pedomanSkripsi') }}">Pedoman Penulisan Skripsi</a></li>
+                                            <li><a href="{{ route('alurSkripsi') }}">Alur Skripsi</a></li>
+                                            <li><a href="{{ route('pengajuanSempro') }}">Form Pengajuan SEMPRO</a></li>
+                                            <li><a href="{{ route('pengajuanSemhas') }}">Form Pengajuan SEMHAS</a></li>
+                                            <li><a href="#">Syarat Yudisium</a></li>
+                                            <li><a href="#">Syarat Wisuda</a></li>
+                                        </ul>
                                     </li>
-                                    <li>
-                                        <a href="{{ route('about') }}">Tentang</a>
+
+                                    <li class="menu-item-has-children">
+                                        <a href="#">Unduhan</a>
+                                        <ul class="sub-menu">
+                                            <li><a href="{{ route('pedomanAkademik') }}">Pedoman Akademik</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="menu-item-has-children">
+                                        <a href="#">Administrasi</a>
+                                        <ul class="sub-menu">
+                                            <li><a href="#">Alur KRS - KHS Mahasiswa</a></li>
+                                            <li><a href="#">Alur Mahasiswa Cuti/Pindah</a></li>
+                                        </ul>
                                     </li>
                                 </ul>
                             </nav>
